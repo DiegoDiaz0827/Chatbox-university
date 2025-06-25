@@ -9,7 +9,7 @@ Este proyecto es una API REST basada en FastAPI que funciona como un chatbot exp
 ## 🛠 Instalación
 1. Clona este repositorio o descarga los archivos
 2. Crea un entorno virtual:
-```bash
+```
 python -m venv venv  
 Activa el entorno virtual:
 
@@ -81,7 +81,7 @@ Asegúrate de que el backend esté en ejecución (uvicorn main:app --reload)
 Abre el archivo frontend/index.html en tu navegador
 
 Pregunta lo que quieras sobre Python 😄
-
+```
 ---
 
 👤 Autor:
