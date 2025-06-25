@@ -103,21 +103,7 @@ input{
     font-family: 'b';
    
 }
-p{
-    background-color: rgb(255, 255, 255);
-    width: 260px;
-    text-align: center;
-    padding: 15px;
-    margin-left: 75px;
-    margin-bottom: 325px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
-    color: green;
-    font-weight: bold;
-    border-bottom-left-radius: 0 ;
-    font-family: 'b';
 
-}
 
  button{
     border-radius: 6px;
@@ -135,3 +121,52 @@ button:hover{
     
     background-color: rgb(178, 180, 182);
 }
+
+#chat-box {
+    height: 350px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+
+.message {
+   
+    display: flex;
+  margin-bottom: 12px;
+  }
+  
+.user {
+    color: #ffffff;
+    justify-content: flex-end;
+  }
+
+  .bubble {
+    font-family: 'b';
+    background-color: green;
+    color: white;
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    position: relative;
+    box-shadow: 0 0 10px black;
+  }
+  
+  .user-bubble {
+    background-color: rgb(9, 136, 5);
+    
+    color: #ffffff;
+    border-bottom-right-radius: 0;
+  }
+

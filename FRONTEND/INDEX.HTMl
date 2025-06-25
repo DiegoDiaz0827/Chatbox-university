@@ -20,12 +20,17 @@
  <div class="contenido">
   <div class="container">
     <h2>UNIVERSIDAD SIMON BOLIVAR</h2>
-    <P>Es un placer tenerte aqui con nosotros 🥳, cuentame, en que podria ayudarte 🤔? </P>
-    <div id="chat-box"></div>
+    <div id="chat-box">
+        <div class="message bot">
+          <div class="bubble bot-bubble">
+            Es un placer tenerte aquí con nosotros 🥳, ¿cuéntame en qué podría ayudarte? 🤔
+          </div>
+        </div>
+      </div>
     
     <footer class="container-footer">
         <form id="chat-form">
-            <input type="text" id="user-input" placeholder="Escribe tu petición aquí">
+            <input type="text" id="user-input" placeholder="Escribe tu petición aquí" required />
             <button>ENVIAR</button>
         </form>
         
@@ -33,5 +38,7 @@
 
   </div>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
