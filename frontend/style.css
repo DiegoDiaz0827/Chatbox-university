@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: url('https://i.pinimg.com/1200x/b3/4c/76/b34c768389d52c045bba8bb3e1ccea78.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.chat-container {
+  width: 420px;
+  background: rgba(26, 31, 46, 0.3);
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; /* espacio entre logo y texto */
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffd43b;
+  font-family: 'Fira Code', monospace;
+}
+
+#chat-box {
+  height: 350px;
+  overflow-y: auto;
+  background: rgba(14, 19, 32, 0.25);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  line-height: 1.4;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.message {
+  margin-bottom: 12px;
+}
+
+.user {
+  color: #61dafb;
+}
+
+.bot {
+  color: #90ee90;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: rgba(34, 40, 61, 0.6);
+  color: white;
+  font-family: 'Fira Code', monospace;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+button {
+  background: rgba(48, 105, 152, 0.8);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-family: 'Fira Code', monospace;
+  transition: background 0.3s ease;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+button:hover {
+  background: rgba(30, 77, 117, 0.9);
+}
+
+
+.message {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.user {
+  justify-content: flex-end;
+}
+
+.bot {
+  justify-content: flex-start;
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+
+}
+
+.bubble {
+  max-width: 75%;
+  padding: 10px 15px;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.user-bubble {
+  background-color: rgba(97, 218, 251, 0.1);
+  border: 1px solid #61dafb;
+  color: #61dafb;
+  border-bottom-right-radius: 0;
+}
+
+.bot-bubble {
+  background-color: rgba(144, 238, 144, 0.1);
+  border: 1px solid #90ee90;
+  color: #90ee90;
+  border-bottom-left-radius: 0;
+}
+
+.error {
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+}
+
+.typing .dot {
+  animation: blink 1s infinite;
+  font-weight: bold;
+}
+
+.typing .dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing .dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
