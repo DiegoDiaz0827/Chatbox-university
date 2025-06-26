@@ -68,7 +68,7 @@ form.addEventListener("submit", async (e) => {
   chatBox.scrollTop = chatBox.scrollHeight;
 
   try {
-    const response = await fetch("http://127.0.0.1:8001/chat", {
+    const response = await fetch("http://127.0.0.1:8000/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ pregunta })
