@@ -1,5 +1,5 @@
-# 🤖 Chatbot API experto en Python
-Este proyecto es una API REST basada en FastAPI que funciona como un chatbot experto en Python. Utiliza el modelo Mistral a través de OpenRouter (compatible con la API de OpenAI) para generar respuestas conversacionales.
+# 🤖 Chatbot asistente virtual y traductor
+Este proyecto es una API REST basada en FastAPI que funciona como un asistente virtual que te da las respuestas a todas tus preguntas acerca de la universidad e ingles. Utiliza el modelo Mistral a través de OpenRouter (compatible con la API de OpenAI) para generar respuestas conversacionales.
 
 ## 🚀 Requisitos
 - Python 3.8 o superior
@@ -35,14 +35,14 @@ Documentación Swagger UI: http://127.0.0.1:8000/docs
 📬 Ejemplo de uso
 Petición POST a /chat:
 
-{"pregunta": "¿Qué es una lista en Python?"}  
+{"pregunta": "¿cual es la traduccion de la palabra levitar en ingles?"}  
 Respuesta esperada:
 
-{"respuesta": "Una lista en Python es una colección ordenada y mutable de elementos..."}  
+{"respuesta": "la traduccion de la palabra es levitade "}  
 
 📁 Estructura del proyecto
 chatbot-ia_python/  
-├── main.py           # API con FastAPI  
+├── chatbot.py           # API con FastAPI  
 ├── config.py         # Contiene el PROMPT_SISTEMA  
 ├── .env              # Variables de entorno  
 ├── requirements.txt  # Dependencias  
@@ -57,11 +57,11 @@ chatbot-ia_python/
 El proyecto incluye una interfaz web moderna y funcional para interactuar visualmente con la API:
 
 ✨ Funcionalidades del frontend
-💎 Diseño tipo Glassmorphism: fondo translúcido con desenfoque y bordes redondeados.
+💎 Diseño basico
 
-🎨 Tema Pythonista: colores azul y amarillo inspirados en el logo oficial de Python.
+🎨 colores de la universidad: colores blanco y verde inspirados en la universidad simon bolivar
 
-⌨️ Tipografía técnica: uso de Fira Code para dar estilo de desarrollo.
+⌨️ Tipografía técnica: uso de fuente original 'MERCY'
 
 💬 Mensajes organizados: estilo chat con diferenciación clara entre el usuario y el bot.
 
@@ -85,10 +85,7 @@ Pregunta lo que quieras sobre Python 😄
 ---
 
 👤 Autor:
-Desarrollado por Ing. Cristian Díaz
+Desarrollado por desarrolador diego diaz
 
 ---
 
-<p align="center">
-  <img width="300" src="https://i.imgur.com/YYf2LgH.png">
-</p>
